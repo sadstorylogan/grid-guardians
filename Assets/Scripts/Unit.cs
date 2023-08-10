@@ -33,8 +33,6 @@ public class Unit : MonoBehaviour
             unitAnimator.SetBool("IsWalking", false);
         }
 
-
-
     }
 
     public void Move(Vector3 targetPosition)
