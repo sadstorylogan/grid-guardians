@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Grid;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class UnitActionSystem : MonoBehaviour
@@ -37,6 +38,11 @@ public class UnitActionSystem : MonoBehaviour
             {
                 selectedUnit.GetMoveAction().Move(mouseGridPosition);
             }
+        }
+
+        if (Input.GetMouseButtonDown(1))
+        {
+            selectedUnit.GetSpinAction().Spin();
         }
     }
 
