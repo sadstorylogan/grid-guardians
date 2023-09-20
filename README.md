@@ -18,10 +18,11 @@ The primary objective for the player is to strategically maneuver their squad of
 - **High Ground Advantage**: Units positioned on elevated terrain have increased sight and range, allowing them to target enemies from a distance and potentially deal more damage.
 
 ### Classes
-- **Assault**
-  - Frontline combatant with shield
+- **Assault** 
+  - Frontline combatant with shield                                                        
   - Can move further than other classes
   - Equipment: Shield
+  
 - **Sniper**
   - Long range eliminator
   - Can target enemies from a distance, high critical hit chance from afar
@@ -33,6 +34,8 @@ The primary objective for the player is to strategically maneuver their squad of
 - **Breacher**
   - Close-quarters combat and obstacle removal
   - Can breach doors or walls, has a higher defense against close-range attacks
+ 
+You can access the project's game design document [here](https://docs.google.com/document/d/1EZYhIJa6osyKNGUkoUrTcMXY6uJHvz4K1JagUbrrrV8/edit?usp=sharing).
 
 
 
