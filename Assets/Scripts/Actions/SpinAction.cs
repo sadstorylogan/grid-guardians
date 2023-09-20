@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Actions
@@ -5,6 +6,7 @@ namespace Actions
     public class SpinAction : BaseAction
     {
         private float totalSpinAmount;
+        
     
         // Update is called once per frame
         private void Update()
@@ -20,11 +22,13 @@ namespace Actions
             if (totalSpinAmount >= 360f)
             {
                 isActive = false;
+                onActionComplete();
             }
         }
 
-        public void Spin()
+        public void Spin(Action onActionComplete)
         {
+            this.onActionComplete = onActionComplete;
             isActive = true;
             totalSpinAmount = 0f;
         }
