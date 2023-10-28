@@ -1,39 +1,36 @@
 # Grid Guardians
 
-- Genre: Strategy
-- Platform(s): PC
+## Overview
+"Grid Guardians" is an intricate showcase of game design skills, blending the thrill of turn-based tactics with the strategic depth found in class-based shooters. Set in a modern-day context, players navigate challenging scenarios that demand strategic planning, as each class brings unique abilities to the table.
 
-### Change log:
-*v0.0.1 - 8/11/23 Document created*
+## Features
+- **Turn-Based Tactical Shooter**: Engage in strategic combat where every move and choice made is crucial to your mission's success, reminiscent of games in the vein of XCOM.
+- **Multiple Character Classes**: Choose from four distinct classes - Assault, Sniper, Medic, and Breacher, each equipped with unique abilities that influence your approach to combat.
+- **Strategic Depth**: Levels designed to be completed in multiple ways, encouraging replayability and tactical diversity.
+- **Modern-Day Setting**: Unlike traditional fantasy or futuristic settings, experience a game that draws from the world as we know it today.
 
-## High Concept
-Grid Guardians is a militaristic turned-based tactical shooter with low-poly visuals. Players must succeed through the missions to finish the game.
+## System Requirements
+- **Operating System**: Windows (Version specifics might apply upon game build completion)
 
-### Player's Objective
-The primary objective for the player is to strategically maneuver their squad of Grid Guardians to eliminate the terrorist threat in each mission while achieving mission-specific goals. These goals range from defending a base, rescuing civilians, or retrieving vital intel.
+## Installation
+Currently, the project is in a developmental stage. To run "Grid Guardians," you need to have Unity (version 2022.3.5f1) installed on your system. Future releases will include a build that can be directly downloaded and played without additional software requirements.
 
-### Movement & Positioning
-- **Grid-Based Movement**: The battlefield is divided into a grid. Each unit has a specific number of tiles they can move each turn.
-- **Cover System**: Various objects on the battlefield (like walls, cars, and barricades) can be used as cover. Units in cover receive a defense bonus, making them harder to hit or damage.
-- **High Ground Advantage**: Units positioned on elevated terrain have increased sight and range, allowing them to target enemies from a distance and potentially deal more damage.
+### For Development:
+1. Ensure you have Unity (version 2022.3.5f1) installed.
+2. Clone the repository to your local machine or download it as a ZIP file.
+3. Open the project in Unity by selecting the project folder.
+4. Navigate through the project files and run the scenes to play the game.
 
-### Classes
-- **Assault** 
-  - Frontline combatant with shield                                                        
-  - Can move further than other classes
-  - Equipment: Shield
-  
-- **Sniper**
-  - Long range eliminator
-  - Can target enemies from a distance, high critical hit chance from afar
-  - Equipment: Sniper rifle, spotting scope
-- **Medic**
-  - Healer and support
-  - Can heal or revive downed teammates
-  - Equipment: Medkits, tranquilizer darts
-- **Breacher**
-  - Close-quarters combat and obstacle removal
-  - Can breach doors or walls, has a higher defense against close-range attacks
+## Usage and Contributions
+"Grid Guardians" is an open project, and contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
+
+You can use "Grid Guardians" as a foundation for your own projects, or contribute to its growth by proposing changes and enhancements.
+
+## License
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## Contact
+Project Link: [https://github.com/sadstorylogan/grid-guardians](https://github.com/sadstorylogan/grid-guardians)
  
 You can access the project's game design document [here](https://docs.google.com/document/d/1EZYhIJa6osyKNGUkoUrTcMXY6uJHvz4K1JagUbrrrV8/edit?usp=sharing).
 
