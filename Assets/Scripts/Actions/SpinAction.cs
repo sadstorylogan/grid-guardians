@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Actions
@@ -26,7 +27,7 @@ namespace Actions
             }
         }
 
-        public void Spin(Action onActionComplete)
+        public override void TakeAction(GridPosition gridPosition, Action onActionComplete)
         {
             this.onActionComplete = onActionComplete;
             isActive = true;
@@ -36,6 +37,16 @@ namespace Actions
         public override string GetActionName()
         {
             return "Spin";
+        }
+
+        public override List<GridPosition> GetValidActionGridPositionList()
+        {
+            var unitGridPosition = unit.GetGridPosition();
+
+            return new List<GridPosition>
+            {
+                unitGridPosition
+            };
         }
     }
 }
