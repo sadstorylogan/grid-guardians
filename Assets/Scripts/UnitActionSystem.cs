@@ -72,7 +72,7 @@ public class UnitActionSystem : MonoBehaviour
                 return;
             }
 
-            if (!selectedAction.IsValidActionGridPosition(mouseGridPosition))
+            if (!selectedUnit.TrySpendActionPointsToTakeAction(selectedAction))
             {
                 return;
             }

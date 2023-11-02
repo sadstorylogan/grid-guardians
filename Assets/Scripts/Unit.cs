@@ -64,8 +64,7 @@ public class Unit : MonoBehaviour
         {
             SpendActionPoints(baseAction.GetActionPointsCost());
             return true;
-        }
-        else
+        } else
         {
             return false;
         }
@@ -76,8 +75,7 @@ public class Unit : MonoBehaviour
         if (actionPoints >= baseAction.GetActionPointsCost())
         {
             return true;
-        }
-        else
+        } else
         {
             return false;
         }
@@ -92,7 +90,4 @@ public class Unit : MonoBehaviour
     {
         return actionPoints;
     }
-    
-
-  
 }
