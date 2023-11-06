@@ -57,6 +57,12 @@ public class Unit : MonoBehaviour
     {
         return gridPosition;
     }
+    
+    public Vector3 GetWorldPosition()
+    {
+        return transform.position;
+    }
+
 
     public SpinAction GetSpinAction()
     {
@@ -118,5 +124,11 @@ public class Unit : MonoBehaviour
     {
         return isEnemy;
     }
+    
+    public void Damage()
+    {
+        Debug.Log(transform + " damaged!");
+    }
+
 
 }
