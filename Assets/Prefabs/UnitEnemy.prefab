@@ -1804,6 +1804,7 @@ GameObject:
   - component: {fileID: 3350490111781558095}
   - component: {fileID: 8260922722148342467}
   - component: {fileID: 1893938635266718570}
+  - component: {fileID: -951848362100021087}
   m_Layer: 7
   m_Name: UnitEnemy
   m_TagString: Untagged
@@ -1874,7 +1875,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24d27be70f6e38a4595c00f0d0fd897e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitAnimator: {fileID: 1326292062889149596}
   maxMoveDistance: 4
 --- !u!114 &1893938635266718570
 MonoBehaviour:
@@ -1888,6 +1888,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a85c2d8a625629408e77448f3445a6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-951848362100021087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2363080565099179642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63bff605e80aca949960ec8bbda4e76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10
 --- !u!1 &2401602082148214297
 GameObject:
   m_ObjectHideFlags: 0

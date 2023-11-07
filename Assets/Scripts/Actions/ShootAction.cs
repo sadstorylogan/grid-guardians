@@ -91,7 +91,7 @@ namespace Actions
             shootingUnit = unit
         });
 
-        targetUnit.Damage();
+        targetUnit.Damage(40);
     }
 
 
