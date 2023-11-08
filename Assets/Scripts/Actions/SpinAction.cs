@@ -28,8 +28,8 @@ namespace Actions
 
         public override void TakeAction(GridPosition gridPosition, Action onActionComplete)
         {
-            ActionStart(onActionComplete);
             totalSpinAmount = 0f;
+            ActionStart(onActionComplete);
         }
         
         public override string GetActionName()
