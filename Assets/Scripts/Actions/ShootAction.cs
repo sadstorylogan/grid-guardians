@@ -24,7 +24,7 @@ namespace Actions
     }
 
         private State state;
-        private int maxShootDistance = 2;
+        private int maxShootDistance = 7;
         private float stateTimer;
         private Unit targetUnit;
         private bool canShootBullet;
@@ -93,9 +93,7 @@ namespace Actions
 
             targetUnit.Damage(40);
         }
-
-
-
+        
         public override string GetActionName()
         {
             return "Shoot";
@@ -103,10 +101,14 @@ namespace Actions
 
         public override List<GridPosition> GetValidActionGridPositionList()
         {
-            List<GridPosition> validGridPositionList = new List<GridPosition>();
-
             GridPosition unitGridPosition = unit.GetGridPosition();
+            return GetValidActionGridPositionList(unitGridPosition);
+        }
 
+        public List<GridPosition> GetValidActionGridPositionList(GridPosition unitGridPosition)
+        {
+            List<GridPosition> validGridPositionList = new List<GridPosition>();
+            
             for (int x = -maxShootDistance; x <= maxShootDistance; x++)
             {
                 for (int z = -maxShootDistance; z <= maxShootDistance; z++)
@@ -142,7 +144,6 @@ namespace Actions
                     validGridPositionList.Add(testGridPosition);
                 }
             }
-
             return validGridPositionList;
         }
 
@@ -166,6 +167,21 @@ namespace Actions
         {
             return maxShootDistance;
         }
+        
+        public override EnemyAIAction GetEnemyAIAction(GridPosition gridPosition)
+        {
+            Unit targetUnit = LevelGrid.Instance.GetUnitAtGridPosition(gridPosition);
+        
+            return new EnemyAIAction
+            {
+                gridPosition = gridPosition,
+                actionValue = 100 + Mathf.RoundToInt((1 - targetUnit.GetHealthNormalized()) * 100f),
+            };
+        }
 
+        public int GetTargetCountAtPosition(GridPosition gridPosition)
+        {
+            return GetValidActionGridPositionList(gridPosition).Count;
+        }
     }
 }
