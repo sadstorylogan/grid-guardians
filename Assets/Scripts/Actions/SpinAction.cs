@@ -8,7 +8,6 @@ namespace Actions
     {
         private float totalSpinAmount;
         
-    
         // Update is called once per frame
         private void Update()
         {
@@ -49,7 +48,7 @@ namespace Actions
 
         public override int GetActionPointsCost()
         {
-            return 2;
+            return 1;
         }
     }
 }
