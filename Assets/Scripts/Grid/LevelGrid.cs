@@ -11,7 +11,7 @@ namespace Grid
 
 
 
-        private GridSystem gridSystem;
+        private GridSystem<GridObject> gridSystem;
 
         [SerializeField] private Transform gridDebugObjectPrefab;
         
@@ -25,7 +25,8 @@ namespace Grid
             }
             Instance = this;
 
-            gridSystem = new GridSystem(10, 10, 2f);
+            gridSystem = new GridSystem<GridObject>(10, 10, 2f, 
+                (GridSystem<GridObject> g, GridPosition gridPosition) => new GridObject(g, gridPosition));
             gridSystem.CreateDebugObjects(gridDebugObjectPrefab);
         }
 
