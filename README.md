@@ -3,6 +3,7 @@
 ## Overview
 "Grid Guardians" is an intricate showcase of game design skills, blending the thrill of turn-based tactics with the strategic depth found in class-based shooters. Set in a modern-day context, players navigate challenging scenarios that demand strategic planning, as each class brings unique abilities to the table.
 
+#### Concept
 ![Level layout](https://github.com/sadstorylogan/grid-guardians/assets/44436956/d16b69c5-6c60-4dfa-a880-b3e82583f115)
 
 ## Features
