@@ -30,6 +30,10 @@ public class Pathfinding : MonoBehaviour
             return;
         }
         Instance = this;
+
+        //gridSystem = new GridSystem<PathNode>(10, 10, 2f, 
+            //(GridSystem<PathNode> g, GridPosition gridPosition) => new PathNode(gridPosition));
+        gridSystem.CreateDebugObjects(gridDebugObjectPrefab);
     }
     
     public void Setup(int width, int height, float cellSize)
@@ -256,4 +260,6 @@ public class Pathfinding : MonoBehaviour
         FindPath(startGridPosition, endGridPosition, out int pathLength);
         return pathLength;
     }
+
+
 }
