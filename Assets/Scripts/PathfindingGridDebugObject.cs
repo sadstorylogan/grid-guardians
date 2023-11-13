@@ -28,5 +28,4 @@ public class PathfindingGridDebugObject : GridDebugObject
         fCostText.text = pathNode.GetFCost().ToString();
         isWalkableSpriteRenderer.color = pathNode.IsWalkable() ? Color.green : Color.red;
     }
-
 }
